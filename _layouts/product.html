@@ -39,10 +39,11 @@ layout: body
                 <option>1in</option>
                 <option>2in</option>
                 <option>3in</option>
-                </select>
-                
                 $('#length').change(function() {
                 $('#button-test').data('item-custom1-value', $(this).val());});
+                </select>
+                
+                
 
                 {% include buy_button.html product_page=page %}
             </div>
