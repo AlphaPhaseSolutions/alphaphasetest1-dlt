@@ -69,3 +69,22 @@
                     $('#button-test').data('item-custom1-options', $(this).val());
                });
                    </script>
+</div>
+<div class="product__additional-data">
+<!--Note the class above is were you have the partials...
+{% partial product ~ '::properties.htm' properties = product.properties %} 
+{% partial product ~ '::links.htm' links = product.links %}
+-->
+  <p>Size:
+    <select id="my-size">
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select></p>
+</div>
+
+<script>
+  $('#my-size').change(function() {
+    $('#my-button').data('item-custom2-value', $(this).val());
+});
+</script>
