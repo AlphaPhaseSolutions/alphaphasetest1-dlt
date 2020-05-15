@@ -20,7 +20,11 @@
     data-item-custom3-required="true"
     data-cart-custom{index}-required>
 
-
+  <script> 
+                $('#length').change(function() {
+                    $('#button-test').data('item-custom1-value', $(this).val());
+               });
+                   </script>
 
     <span class="button__icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,9 +41,3 @@
         Add to cart
     </span>
 </button>
-
-  <script> 
-                $('#length-select').change(function() {
-                    $('#button-test').data('item-custom1-value', $(this).val());
-               });
-                   </script>
