@@ -43,6 +43,12 @@ layout: body
                 </select>
                 </div>
                 
+                 <script> 
+                $('#length').change(function() {
+                    $('#my-button').data('item-custom1-value', $(this).val());
+               });
+                   </script>
+                
                 
 
                 {% include buy_button.html product_page=page %}
