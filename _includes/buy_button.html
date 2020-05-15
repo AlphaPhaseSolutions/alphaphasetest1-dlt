@@ -12,17 +12,6 @@
     data-item-custom1-name="Length"
     data-item-custom1-options="1 in[+1.00]|2 in[+2.00]|3 in[+3.00]|4 in[+4.00]|5 in[+5.00]|6 in[+6.00]|7 in[+7.00]|8 in[+8.00]|9 in[+9.00]|10 in[+10.00]|11 in[+11.00]|12 in[+12.00]"
     data-item-custom1-required="true"
-                  <script> 
-                $('#length').change(function() {
-                    $('#my-button').data('item-custom1-value', $(this).val());
-               });
-                   
-
-    <!--  $('#button-test').data('data-item-custom1-value', $(this).val());
-                });
-                   </script> -->
-
-
     data-item-custom2-name="Width"
     data-item-custom2-options="1 in[+1.00]|2 in[+2.00]|3 in[+3.00]|4 in[+4.00]|5 in[+5.00]|6 in[+6.00]|7 in[+7.00]|8 in[+8.00]|9 in[+9.00]|10 in[+10.00]|11 in[+11.00]|12 in[+12.00]"
     data-item-custom2-required="true"
@@ -30,6 +19,12 @@
     data-item-custom3-options="1 in[+1.00]|2 in[+2.00]|3 in[+3.00]|4 in[+4.00]|5 in[+5.00]|6 in[+6.00]|7 in[+7.00]|8 in[+8.00]|9 in[+9.00]|10 in[+10.00]|11 in[+11.00]|12 in[+12.00]"
     data-item-custom3-required="true"
     data-cart-custom{index}-required>
+
+ <script> 
+                $('#length').change(function() {
+                    $('#my-button').data('item-custom1-value', $(this).val());
+               });
+                   </script>
 
     <span class="button__icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
